@@ -1,0 +1,1 @@
+here we a accepting a list of words in comma serated form and converting it into a dictionary format
