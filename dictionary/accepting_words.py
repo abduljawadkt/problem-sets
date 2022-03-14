@@ -1,5 +1,5 @@
 freq=dict()
-l=input().split()
+l=input().split(',')
 
 for word in l:
   freq[word]=0
