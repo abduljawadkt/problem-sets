@@ -5,3 +5,4 @@ for word in l:
   freq[word]=0
 for word in l:
   freq[word]=freq[word]+1
+print(freq)
