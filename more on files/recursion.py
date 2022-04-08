@@ -8,3 +8,6 @@ def check0(L):
   else:
     return check0(L[1:len(L)])
 #proper recursion occurs here
+L=[1,2,3,4,5,5,6,7,0,9]
+ans=check0(L)
+print(ans)
