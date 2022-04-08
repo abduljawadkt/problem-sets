@@ -6,4 +6,8 @@ d['ashique']=[17,18,19,'rahul@iitmonline.ac.in']
 
 
 
-print(d['jawad'][3])
+#print(d['jawad'][3])
+
+
+s=string.ascii.lowercase
+print(s)
