@@ -1,6 +1,9 @@
+'''''
 m=[] 
-n=int(input()) 
-for i in range(n): 
+#
+#n=int(input()) 
+#for i in range(n): 
+  #considering as 
   f=input().split('') 
  for j in range(n): 
     f[j]=int(f[j]) 
@@ -13,3 +16,14 @@ for i in range(n):
  print(m[i][j],end=' ') 
  else: 
  print(m[i][j]) 
+'''
+
+
+matrix=[] 
+n=int(input()) 
+for i in range(n): 
+ f=input().split(' ') 
+ for j in range(n): 
+  f[j]=int(f[j]) 
+matrix.append(f) 
+print(matrix) 
