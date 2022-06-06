@@ -24,5 +24,5 @@ elif(ratio>=0.3 and ratio<0.6):
 elif(ratio>=0 and ratio<0.3):
   print("Alert!!!...you spent almost",perc,"percentage of the income today.think before spending")
 else:
-  print("Alert....your today's expense is morethan income.it will be risky in future")
+  print("Alert....your today's expense is morethan income.you have better to reduce the expenses or increase the income daily")
   #end 
