@@ -18,7 +18,7 @@ print("your current bank balance is Rs.", balance)
 
 #basic final report with if else
 if (ratio>=y*0.6):
-  print("congrats,your today's expense is only",perc,"percentage of your income,keep saving")
+  print("congrats,your today's expense is only",perc,"percentage of your income,keep saving,we will introduce you better financial plannings soon")
 elif(ratio>=0.3 and ratio<0.6):
   print("Good,your today's expense is only",perc,"percentage of your income,keep maintaining your expenses")
 elif(ratio>=0 and ratio<0.3):
