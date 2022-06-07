@@ -9,11 +9,12 @@ while (serv>3 or serv<1):
   print("invalid syntax")
   serv=int(input("Enter Here: "))
 
-#intially we are summing up the expenses
-x=int(input("Enter your Today's Expense : "))
-y=int(input("Enter your Today's income Here: "))
-
-net=y-x
+  #daily input
+if serv==2:
+  net=0
+  x=int(input("Enter your Today's Expense : "))
+  y=int(input("Enter your Today's income Here: "))
+  net=y-x
 
 #print(net)
 #setting balance
