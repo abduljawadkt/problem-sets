@@ -9,8 +9,12 @@ while (serv>3 or serv<1):
   print("invalid syntax")
   serv=int(input("Enter Here: "))
 
-  #daily input
-if serv==2:
+#adding service 1
+if serv==1:
+  serv1=int(input("Enter Income/Expense here(use negative sign if it is expense): "))
+  
+#daily input
+elif serv==2:
   net=0
   x=int(input("Enter your Today's Expense : "))
   y=int(input("Enter your Today's income Here: "))
@@ -19,7 +23,7 @@ if serv==2:
 #print(net)
 #setting balance
 balance=0
-balance=balance+net
+balance=balance+net+serv1
 
 #calculating percentage
 ratio=x/y
