@@ -3,7 +3,13 @@
 service=['1.Individual input','2.Daily input','3.Report']
 print("choose the service from the following")
 print(service)
+#choosing service and redirecting to it
+serv=int(input("Enter Here: "))
+while (serv>3 or serv<1):
+  print("invalid syntax")
+  serv=int(input("Enter Here: "))
 
+#intially we are summing up the expenses
 x=int(input("Enter your Today's Expense : "))
 y=int(input("Enter your Today's income Here: "))
 
