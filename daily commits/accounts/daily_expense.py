@@ -1,4 +1,8 @@
-#intially we are summing up the expenses
+#intro interphase
+#selecting service
+service=['1.Individual input','2.Daily input','3.Report']
+print("choose the service from the following")
+print(service)
 
 x=int(input("Enter your Today's Expense : "))
 y=int(input("Enter your Today's income Here: "))
