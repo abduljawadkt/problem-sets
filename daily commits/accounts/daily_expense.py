@@ -11,7 +11,11 @@ while (serv>3 or serv<1):
 
 #adding service 1
 if serv==1:
+  out1=0
   serv1=int(input("Enter Income/Expense here(use negative sign if it is expense): "))
+  out1=out1+serv1
+  
+  
   
 #daily input
 elif serv==2:
@@ -23,7 +27,7 @@ elif serv==2:
 #print(net)
 #setting balance
 balance=0
-balance=balance+net+serv1
+balance=balance+net+out1
 
 #calculating percentage
 ratio=x/y
