@@ -35,3 +35,9 @@ elif(ratio>=0 and ratio<0.3):
 else:
   print("Alert....your today's expense is morethan income.you have better to reduce the expenses or increase the income daily")
   #end 
+#weekly report problem
+days()
+choice=input()
+for l in days():
+  
+    
