@@ -10,7 +10,7 @@ def __init__(self):
 def income_ask(self):
         add_income = input('Add income? [y/n]: ')
         return add_income
-def self.expenses(self):
-        int(input("Enter your self Expense: ")
+def income_sum(self):
+        self.income = sum(self.income_list)
 def sef.expense_list(self):
           Self.expense_list.append(self.expenses)
