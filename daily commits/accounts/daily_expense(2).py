@@ -12,5 +12,9 @@ def income_ask(self):
         return add_income
 def income_sum(self):
         self.income = sum(self.income_list)
-def sef.expense_list(self):
-          Self.expense_list.append(self.expenses)
+def expense_ask(self):
+        add_expense = input('Add expense? [y/n]: ')
+        return add_expense
+ def expense_sum(self):
+        self.expenses = sum(self.expense_list)
+  
