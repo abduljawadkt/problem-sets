@@ -6,10 +6,10 @@ def __init__(self):
         self.expense_name = []
         self.income_name = []
         self.income_list = []
-        
-def self.income(self):
-        int(input(“Enter your income: ")
-        Return selfincome
+ #income adding       
+def income_ask(self):
+        add_income = input('Add income? [y/n]: ')
+        return add_income
 def self.expenses(self):
         int(input("Enter your self Expense: ")
 def sef.expense_list(self):
