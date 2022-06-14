@@ -15,6 +15,11 @@ def income_sum(self):
 def expense_ask(self):
         add_expense = input('Add expense? [y/n]: ')
         return add_expense
- def expense_sum(self):
+def expense_sum(self):
         self.expenses = sum(self.expense_list)
-  
+def income_check(self):
+        if not self.income_list:
+            print('Please enter atleast one source of income. ')
+            self.prompt_income()
+        else:
+            return
