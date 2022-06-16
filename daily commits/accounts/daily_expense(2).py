@@ -21,3 +21,14 @@ def income_check(self):
             self.prompt_income()
         else:
             return
+def prompt_income(self):
+        x = False
+        while not x:
+            result = self.income_ask()
+            if result == 'y':
+                income_input = int(input('Enter source of income.[Numbers Only]: '))
+                self.income_list.append(income_input)
+                income_name = input('Enter income name. [Name Only]: ')
+                self.income_name.append(income_name)
+            else:
+                self.income_check()
