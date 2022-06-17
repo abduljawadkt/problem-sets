@@ -23,4 +23,10 @@ def gather_expense():
   additional=float(input("Enter you additional expenses of this month: "))
   total_expense=housing+food+travel+additional
   return total_expense
+
+monthly_expense=gather_expense()  
+
+print("Your total expense of this month is",str(monthly_expense))
+#margin_section
+margin=total_income-monthly_expense
   
