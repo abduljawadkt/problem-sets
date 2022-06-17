@@ -17,4 +17,10 @@ print("Now let's Get some expenses....")
 
 #defining function to collect all the expenses
 def gather_expense():
+  housing=float(input("Enter your home budget of this month: "))
+  food=float(input("Enter your monthly food related expenses: "))
+  travel=float(input("Enter your total travel expense of the month: "))
+  additional=float(input("Enter you additional expenses of this month: "))
+  total_expense=housing+food+travel+additional
+  return total_expense
   
