@@ -29,4 +29,11 @@ monthly_expense=gather_expense()
 print("Your total expense of this month is",str(monthly_expense))
 #margin_section
 margin=total_income-monthly_expense
-  
+
+if margin>=0:
+  print("Your total surplus of next month will be",margin)
+else:
+  print("You will come up" +str(margin)+ "negative")
+
+#end
+print("Thank you for using monthly budget calculator") 
