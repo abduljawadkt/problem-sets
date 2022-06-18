@@ -1,7 +1,7 @@
 #string concatenation
 #suppose we want to create a string that says 'subscribe to _____'
 #3 ways we checking
-youtuber=""
+youtuber=""#some string variable
 
 print("subscribe to " +youtuber)
 print("subsctibe to {}".format(youtuber))
