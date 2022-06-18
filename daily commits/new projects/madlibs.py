@@ -3,7 +3,7 @@
 #3 ways we checking
 youtuber=""
 
-print("subscribe to" +youtuber)
+print("subscribe to " +youtuber)
 print("subsctibe to {}".format(youtuber))
 #usage of fstring
 print(f"subscribe to {youtuber}")
