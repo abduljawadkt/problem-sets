@@ -26,9 +26,12 @@ def computer_guess(x):
   high=x
   feedback=''
   
-  while feedback != 'c' and low!=high:
+  while feedback != 'c':
+    if low!=high:
     guess=random.randint(low,high)
-    feeback=input(f"is {guess} is a too high,too low or correct?")
+    else:
+      guess=low
+      feeback=input(f"is {guess} is a too high,too low or correct?")
     if feedback=='h':
       high=guess-1
     elif feedback=='l':
