@@ -25,15 +25,14 @@ def computer_guess(x):
   low=1
   high=x
   feedback=''
-#untill getting correct and initially
-  while feedback !='c':
-    if low!=high:
-      guess=random.randint(low,high)
-    else:
-      guess=low
-      feedback=(f"is {guess} is too hight(H) or low(L) or correct(C)?")
+  
+  while feedback != 'c' and low!=high:
+    guess=random.randint(low,high)
+    feeback=input(f"is {guess} is a too high,too low or correct?")
     if feedback=='h':
       high=guess-1
-    elif feedback=='l':  
+    elif feedback=='l':
       low=guess+1
-  print("Yay,the computer guessed correctly")    
+  print(f"yay,you predicted correctly,its {guess}")   
+                  
+computer_guess(100)  
