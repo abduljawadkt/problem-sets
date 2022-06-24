@@ -30,3 +30,4 @@ def hangman():
             print("You have already used this letter,print another letter")
         else:
             print("invalid character,try again")
+      
