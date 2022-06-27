@@ -19,7 +19,7 @@ class computerplayer(player):
     #superclass is used here.#temporary
 
   def get_move(self,game):
-    pass
+    square=random.choice(game.availble_moves())
     
 class humanplayer(player):
   #inheritance
@@ -27,5 +27,16 @@ class humanplayer(player):
     super().__init__(letter)
 
   def get_move(self,game):
-    pass
+    valid_square=false
+    val=None
+    while not valid_square:
+      square=input(self.letter+'\'s turn.input move(0-9):')
+      try:
+        val=int(square)
+        if val not in game.available_moves():
+          raise ValueError
+        valid square=True
+      except ValueError:
+        print('Invalid Square,Try again')
+    return val    
     
