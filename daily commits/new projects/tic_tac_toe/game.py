@@ -21,5 +21,9 @@ class tictactoe:
      #|0|1|2|
      #|3|4|5|
      #|6|7|8| 
+
+  def availble_moves(self):
+    return [i for i,spot in enumerate(self.board) if spot=='']
+      #enumerate converts to (index,element) format
       
     
