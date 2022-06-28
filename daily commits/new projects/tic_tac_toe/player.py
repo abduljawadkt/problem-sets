@@ -23,10 +23,12 @@ class computerplayer(player):
     
 class humanplayer(player):
   #inheritance
+
   def __init__(self,letter):
     super().__init__(letter)
 
   def get_move(self,game):
+    #here we want to iterate untill we find a valid square
     valid_square=False
     val=None
     while not valid_square:

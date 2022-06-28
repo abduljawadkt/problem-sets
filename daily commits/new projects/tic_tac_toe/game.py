@@ -25,6 +25,7 @@ class tictactoe:
 
   def availble_moves(self):
     return [i for i,spot in enumerate(self.board) if spot=='']
+    
       #enumerate converts to (index,element) format as tuple
       #gives index number of empty areas
   
@@ -39,6 +40,7 @@ class tictactoe:
   def make_move(self,square,letter):
     #if valid move,it will assign square to letter
     if self.board[square]=='':
+      #to represent availble square in board
       self.board[square]=letter
       if self.winner(square,letter):
         self.current_winner=letter
@@ -49,6 +51,7 @@ class tictactoe:
   def winner(self,square,letter):
     #for that we need to check the row
     row_ind=square//3
+    #we get row index while doing stage division
     row=self.board[row_ind*3:(row_ind+1)*3]
     if all([spot==letter for spot in  row]):
       return True
