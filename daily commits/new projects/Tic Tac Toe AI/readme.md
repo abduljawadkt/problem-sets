@@ -1,0 +1,1 @@
+this project mainly same to that of tic tac toe but here we use some more advanced functions in it.Let's learn through codes
