@@ -1,7 +1,7 @@
 import random
-#to use mathematical functions
-import math
-#object 
+#import math
+
+#object
 #thigs to do for a player
 class player:
   def __init__(self,letter):
@@ -39,7 +39,7 @@ class humanplayer(player):
           #chech whether the move could be done
           raise ValueError
           
-        valid square=True
+        valid_square=True
         #if the above code become successful
         #try-except
         #error handling
@@ -48,8 +48,17 @@ class humanplayer(player):
     return val
 
     def geniuscomputerplayer(player):
-      if len(game.available_moves()) == 9:
-        square = random.choice(game.available_moves())
-      else:
-        square = self.minimax(game, self.letter)
+      def __init__(self,letter):
+          super().__init__(letter)
+      def get_move(self,game):
+        if len(game.available_moves()) == 9:
+          square = random.choice(game.available_moves())
+        else:
+          square = self.minimax(game, self.letter)
       return square
+
+      def minimax(self,state,player):
+        max_player=self.letter
+
+
+
