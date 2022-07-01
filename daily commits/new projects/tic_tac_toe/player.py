@@ -45,5 +45,11 @@ class humanplayer(player):
         #error handling
       except ValueError:
         print('Invalid Square,Try again')
-    return val    
-    
+    return val
+
+    def geniuscomputerplayer(player):
+      if len(game.available_moves()) == 9:
+        square = random.choice(game.available_moves())
+      else:
+        square = self.minimax(game, self.letter)
+      return square
