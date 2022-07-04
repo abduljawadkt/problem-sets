@@ -1,3 +1,6 @@
+import random
+
+
 #we need to write code for binary search here
 #we have to show that binary search is faster than naive search
 #algorithm for naive search
@@ -41,7 +44,17 @@ def binary_search(l,target,low=None,high=None):
 
 
 if __name__=='__main__':
-  l=[1,2,3,4,5,6,7,8,9,12]
-  target=10
-  print(naive_search(l,target))
-  print(binary_search(l,target))
+  
+#  l=[1,2,3,4,5,6,7,8,9,12]
+# target=10
+#  print(naive_search(l,target))
+# print(binary_search(l,target))
+
+#lets do another snippet of code to search a word from a random list
+  length=1000
+  sorted_list=set()
+  while len(sorted_list) < length:
+    sorted_list.add(random.randint(-3*length,3*length))
+  sorted_list=sorted(sorted_list)  
+  
+    
