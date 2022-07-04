@@ -16,15 +16,32 @@ def naive_search(l,target):
 
 #lets move to binary search
 #binary search is a midpoint based searching mechanism
-def binary_search(l,target):
-  midpoint=len(l)//2
+def binary_search(l,target,low=None,high=None):
+  if low is None:
+    low=0
+  
+  if high is None:
+    high=len(l)-1
+
+  if high<low:
+    return -1
+
+  
+  midpoint=(low+high)//2
+  #we could deal with any kind of alterations in the list
 
   #if midpoint,we return midpoin itself
   if l[midpoint]==target:
     return midpoint
 
   elif target<l[midpoint]:
-    return binary_search(l,target)
+    return binary_search(l,target,low,midpoint-1)
   else:
-    return binary_search(l,target)
-  #code structure  
+    return binary_search(l,target,midpoint+1,high)
+
+
+if __name__=='__main__':
+  l=[1,2,3,4,5,6,7,8,9,12]
+  target=10
+  print(naive_search(l,target))
+  print(binary_search(l,target))
