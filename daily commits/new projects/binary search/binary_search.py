@@ -27,3 +27,4 @@ def binary_search(l,target):
     return binary_search(l,target)
   else:
     return binary_search(l,target)
+  #code structure  
