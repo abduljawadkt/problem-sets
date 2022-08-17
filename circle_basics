@@ -1,0 +1,8 @@
+#learning how to draw a circle 
+
+import turtle
+
+t=turtle.Turtle()
+
+r=50
+t.circle(50)
