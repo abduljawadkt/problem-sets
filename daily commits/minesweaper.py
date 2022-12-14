@@ -9,12 +9,22 @@ class Board:
   self.board = self.make_new_board()
   #to plant new bombs
 
+  self.assign_values_to_board()
+
   self.dug = set() #if we dig at 0, 0,then self.dug = {(0,0)}
 
   def make_new_board(self):
   #construct a new board based on dimension size and num bombs
   #we should construct list of lists
   #but it is a 2D board
+
+  def assign_values_to_board(self):
+    for r in range(self.dim_size):
+      for c in range(self.dim_size):
+        if self.Board[r][c] == "*":
+          #if this already a bomb, we dont want to caluculate anything
+          continue
+        self.Board[r][c] = self.num_neighbouring_bombs(r, c)
 
   #generating a new board
     Board = [[None for _ in range(self.dim_size)] for _ in range(self.dim_size)]
@@ -32,7 +42,13 @@ class Board:
       loc = random.randint(0, self.dim_size**2-1) #return a random integer N such that a<=N
       row = loc//self.dim_size
       col = loc % self.dim_size
-      
+
+      if Board[row][col] == "*" :
+        #this means we actually planted a bomb there
+      Board[row][col]="*" #plant bomb
+      bombs_planted =+1
+
+    return Board
     
 
 
