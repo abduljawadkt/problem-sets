@@ -40,11 +40,16 @@ class Board:
     #make sure not go out of bounds
 
     get_num_neighboring_bombs = 0
-    for r in range(row-1 , (row+1)+1):
-      for c in range(col-1, (col+1)+1):
+    for r in range(max(0,row-1) , min(self.dim_size-1,row+1)+1):
+      for c in range(max(0,(col-1)), min(self.dim_size-1,col+1)+1):
         if r==row and c==col:
           #our original location,dont check
           continue
+        if self.board[r][c] == "*":
+          num_neighboring_bombs =+ 1
+    return num_neighboring_bombs      
+
+    
   
  
 
