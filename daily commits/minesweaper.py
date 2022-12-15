@@ -37,6 +37,14 @@ class Board:
     #botttom left = (row + 1,col -1)
     #bottom middle = (row+1,col)
     #bottom right = (row+1,col+1)
+    #make sure not go out of bounds
+
+    get_num_neighboring_bombs = 0
+    for r in range(row-1 , (row+1)+1):
+      for c in range(col-1, (col+1)+1):
+        if r==row and c==col:
+          #our original location,dont check
+          continue
   
  
 
