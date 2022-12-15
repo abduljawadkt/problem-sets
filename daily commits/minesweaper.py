@@ -26,6 +26,21 @@ class Board:
           continue
         self.Board[r][c] = self.num_neighbouring_bombs(r, c)
 
+  
+  def get_num_neighboring_bombs(self , row , col):
+   #lets iterate through each of the neighboring positions and sum number of bombs
+   #top lef = (row-1 , col-1)
+   #top middle = (row-1 , col-1)
+   #top right = (row-1,col+1)
+    #left = (row , col-1)
+    #right = (row, col+1)
+    #botttom left = (row + 1,col -1)
+    #bottom middle = (row+1,col)
+    #bottom right = (row+1,col+1)
+  
+ 
+
+    
   #generating a new board
     Board = [[None for _ in range(self.dim_size)] for _ in range(self.dim_size)]
 #this creates an array like this
