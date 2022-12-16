@@ -80,7 +80,16 @@ class Board:
     
 
 
+  
+  
 def play (dim_size == 10 , num_bombs == 10 ):
+  board = Board(dim_size,num_bombs)
+
+  def dig(self,row,col):
+  #dig at that respective location
+  #return true if it is a successful dig,else false
+    
+    
   #step 1 : create a new board and plant new bombs
   #step 2 : show the user the board and ask where to dig
   #step 3 : if there is is bomb,show game over
