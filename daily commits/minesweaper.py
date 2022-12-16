@@ -47,7 +47,12 @@ class Board:
           continue
         if self.board[r][c] == "*":
           num_neighboring_bombs =+ 1
-    return num_neighboring_bombs      
+    return num_neighboring_bombs  
+
+  def dig(self,row,col):
+
+  def __str__(self):
+    
 
     
   
