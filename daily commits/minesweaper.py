@@ -89,7 +89,22 @@ def play (dim_size == 10 , num_bombs == 10 ):
   #dig at that respective location
   #return true if it is a successful dig,else false
     
-    
+  self.dug.add(row,col): #keep track that we dug here
+    if self.board[row][col]=="*":
+      return False
+    elif self.board[row][col]>0:
+      return True
+
+      #self.board[row][col]==0
+      for r in range(max(0,row-1) , min(self.dim_size-1,row+1)+1):
+        for c in range(max(0,(col-1)), min(self.dim_size-1,col+1)+1):
+          if (r,c) in self.dug:
+            Continue #dont dig where you already dug
+            
+            
+            
+      
+  
   #step 1 : create a new board and plant new bombs
   #step 2 : show the user the board and ask where to dig
   #step 3 : if there is is bomb,show game over
